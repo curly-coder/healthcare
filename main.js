@@ -1,0 +1,39 @@
+$('#slider').owlCarousel({
+    loop:true,
+    margin:15,
+    nav:false,
+    dots:4,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+$('#slider-clients').owlCarousel({
+    loop:true,
+    margin:15,
+    nav:true,
+    navText:["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+$('.hamburger').on('click', function(){
+  $('.main-menu').toggle();
+})
